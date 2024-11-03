@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCircle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CircleFragment" >
+
+    <EditText
+        android:id="@+id/edHeight"
+        android:layout_width="293dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/radious"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnArea"
+        android:layout_width="293dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/button_Area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edHeight" />
+
+    <Button
+        android:id="@+id/btnPerimeter"
+        android:layout_width="293dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_perimeter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArea" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="293dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerimeter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
